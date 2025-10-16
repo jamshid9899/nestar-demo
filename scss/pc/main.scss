@@ -1,6 +1,8 @@
-/* IMPORTS */
+/** IMPORTS **/
 @import "/scss/variables.scss";
 @import "/scss/pc/homepage/homepage.scss";
+@import "/scss/pc/property/property.scss";
+@import "/scss/pc/property/detail.scss";
 
 #pc-wrap {
   #top {
@@ -15,7 +17,7 @@
         box-sizing: border-box;
         z-index: 99;
         align-items: center;
-        border-top: 1px solid rgba(255, 255, 255, 0.07);
+        border-top: 1px solid rgba(255, 255, 255, 0.7);
         &.transparent {
           background-color: #181a209e;
         }
@@ -31,7 +33,7 @@
           }
           .router-box {
             position: relative;
-            width: 617px;
+            width: 617.778px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -57,11 +59,11 @@
               display: flex;
               align-items: center;
               justify-content: center;
-              border-radius: 60px;
-              border: 1px solid #fff;
+              border-radius: 68px;
+              border: 1px solid #ffffff;
               cursor: pointer;
               svg {
-                color: #fff;
+                color: #ffffff;
                 margin-right: 10px;
               }
               span {
@@ -70,7 +72,7 @@
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
-                color: #fff;
+                color: #ffffff;
               }
             }
             .login-user {
@@ -122,11 +124,11 @@
             align-items: center;
             justify-content: space-between;
             border-radius: 12px;
-            background: rgba(255, 255, 255, 0.575);
+            background-color: rgba(255, 255, 255, 0.575);
             box-sizing: border-box;
             cursor: pointer;
             &.on {
-              background-color: #fff;
+              background: #ffffff;
               border: 1px solid #000;
               color: #181a20;
             }
@@ -153,7 +155,7 @@
               width: 25px;
               height: 22px;
               cursor: pointer;
-}
+            }
             span {
               color: #fff;
               font-family: $font;
@@ -177,7 +179,7 @@
             svg {
               width: 20px;
               height: 20px;
-              color: #fff;
+              color: #ffffff;
             }
           }
         }
@@ -195,7 +197,7 @@
           gap: 40px;
           visibility: hidden;
           border-radius: 12px;
-          background: #fff;
+          background: #ffffff;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-sizing: border-box;
           z-index: 2;
@@ -205,7 +207,7 @@
             background: #fffdfd;
           }
           div {
-            width: 205px;
+            width: 295px;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -244,7 +246,7 @@
           justify-content: space-between;
           visibility: hidden;
           border-radius: 12px;
-          background-color: #fff;
+          background: #fff;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-sizing: border-box;
           z-index: 1;
@@ -315,7 +317,7 @@
             font-weight: 400;
             line-height: 26px;
             cursor: pointer;
-            &:hover {
+            &.hover {
               border-radius: 5px;
               border: 1px solid #b9b9b9;
               box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -325,6 +327,7 @@
       }
     }
   }
+
   .header-basic {
     position: relative;
     width: 100%;
@@ -332,12 +335,13 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: black;
+    background: black;
     &.auth {
       height: 300px;
     }
     .container {
       margin-top: 175px;
+
       strong {
         color: #fff;
         font-family: $font;
@@ -358,6 +362,7 @@
       }
     }
   }
+
   #footer {
     position: relative;
     padding: 60px 0px 18px 0px;
@@ -465,7 +470,7 @@
               }
             }
           }
-          .bottom {
+          .button {
             margin-top: 60px;
             display: flex;
             flex-direction: row;
@@ -491,7 +496,7 @@
                 font-style: normal;
                 font-weight: 400;
                 cursor: pointer;
-                &:hover {
+                &.hover {
                   color: #ffffff;
                   text-decoration-line: underline;
                 }
